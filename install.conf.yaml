@@ -9,6 +9,15 @@
     - [git submodule update --init --recursive, Installing shared submodules]
 
 - link:
+    # Tmux
+    ~/.tmux.conf: tmux/.tmux.conf
+
+    # Vim
+    ~/.vimrc: vim/.vimrc
+    ~/.vim/autoload/lib/:
+      glob: true
+      path: vim/lib/*.vim
+
     # Zsh
     ~/.config/zsh/config: zsh/config
     ~/.config/zsh/plugins: zsh/plugins
