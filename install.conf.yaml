@@ -1,8 +1,16 @@
 - defaults:
     link:
       relink: true
+      create: true
 
 - clean: ['~']
 
 - shell:
-  - [git submodule update --init --recursive, Installing shared submodules]
+    - [git submodule update --init --recursive, Installing shared submodules]
+
+- link:
+    # Zsh
+    ~/.config/zsh/config: zsh/config
+    ~/.config/zsh/plugins: zsh/plugins
+    ~/.zshrc: zsh/.zshrc
+
