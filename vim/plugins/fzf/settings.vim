@@ -1,0 +1,8 @@
+" Extra keybindings.
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
+" Layout.
+let g:fzf_layout = { 'down': '~25%' }
